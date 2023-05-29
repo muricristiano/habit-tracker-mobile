@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <View style={styles.container}> 
-      <Text style={styles.text}>Yeah, It's working perfectly!</Text>
+      <Text style={styles.text}>Yeah, it's working perfectly!</Text>
       <StatusBar barStyle="light-content" backgroundColor='transparent' translucent />
     </View>
   );
