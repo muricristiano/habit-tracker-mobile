@@ -40,6 +40,16 @@ Library to manipulate dates
 Just import {} from '@expo/vector-icons' (Search for vector-icons Expo to browse the icons)
 
 
+### @react-navigation/native
+> npm i @react-navigation/native
+Library for navigation, screen navigation: stack overlapping menus, bar menus, etc.
+> npx expo install react-native-screens react-native-safe-area-context
+react-native-screens -> navigations
+area-context -> details on screen for example from Iphone X to current, dealing with the notepad.
+> npm i @react-navigation/native-stack
+STACK NAVIGATOR (the strategy we are going to use for navigation here)
+
+
 DEV PACKAGES:
 =======
 ### tailwindcss --save-dev

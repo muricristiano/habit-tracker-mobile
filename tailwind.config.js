@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#09090A'
+        background: '#09090A',
+        white: '#fff'
       },
       fontFamily: {
         regular: 'Inter_400Regular',
