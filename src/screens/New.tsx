@@ -58,7 +58,7 @@ export function New() {
                 }
 
                 <TouchableOpacity
-                    className="flex-row mt-4 h-12 bg-green-700 rounded-lg justify-center items-center"
+                    className="flex-row mt-4 h-12 bg-green-500 rounded-lg justify-center items-center"
                     activeOpacity={0.6}
                 >
                     <Feather 
