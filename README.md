@@ -50,6 +50,8 @@ area-context -> details on screen for example from Iphone X to current, dealing 
 STACK NAVIGATOR (the strategy we are going to use for navigation here)
 
 
+
+
 DEV PACKAGES:
 =======
 ### tailwindcss --save-dev
