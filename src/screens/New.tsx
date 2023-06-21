@@ -16,7 +16,7 @@ export function New() {
     function handleToggleWeekDay(weekDayIndex: number){
         if(weekDays.includes(weekDayIndex)){
             setWeekDays(prevState => prevState.filter(weekDay => weekDay !== weekDayIndex))
-        }else{
+        }else{ 
             setWeekDays(prevState => [...prevState, weekDayIndex])
         }
     }
@@ -24,7 +24,7 @@ export function New() {
     async function handleCreateNewHabit(){
         try{
             if(!title.trim() || weekDays.length === 0){
-                Alert.alert('Fields Required', 'Inform the habit and define the recurrence')
+                return Alert.alert('Fields Required', 'Inform the habit and define the recurrence')
             }
 
             await api.post('/habits', {title, weekDays})

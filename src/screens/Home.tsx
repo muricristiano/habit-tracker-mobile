@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { View, Text, ScrollView, Alert } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { ParamListBase, useNavigation, useFocusEffect } from "@react-navigation/native";
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import dayjs from "dayjs";
 
 import { api } from "../lib/axios";
@@ -26,7 +27,7 @@ export function Home() {
     const [loading, setLoading] = useState(true)
     const [summary, setSummary] = useState<SummaryProps | null>(null)
 
-    const { navigate } = useNavigation();
+    const { navigate } = useNavigation<NativeStackNavigationProp<ParamListBase>>();
 
     async function fetchData(){
         try {
@@ -40,11 +41,10 @@ export function Home() {
             setLoading(false)
         }
     }
-
     
-    useEffect(() => {
+    useFocusEffect(useCallback(() => {
         fetchData();
-    }, [])
+    }, []))
     
     if(loading){
         return(
