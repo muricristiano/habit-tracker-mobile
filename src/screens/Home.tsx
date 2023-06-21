@@ -48,7 +48,7 @@ export function Home() {
     
     if(loading){
         return(
-            <Loading/>
+            <Loading/> 
         )
     }
 

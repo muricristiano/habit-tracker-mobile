@@ -18,7 +18,11 @@ interface Props extends TouchableOpacityProps {
 
 export function HabitDay({amountOfHabits = 0, amountCompleted = 0, date, ...rest}: Props){
     
-    const amountAccomplishedPercentage = amountOfHabits > 0 ? generateProgressPercentage(amountOfHabits, amountCompleted) : 0
+    const amountAccomplishedPercentage = amountOfHabits > 0
+    ? 
+    generateProgressPercentage(amountOfHabits, amountCompleted) 
+    :
+    0
     
     const today = dayjs().startOf('day').toDate();
     const isCurrentDay = dayjs(date).isSame(today)

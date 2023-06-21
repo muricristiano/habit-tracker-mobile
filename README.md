@@ -65,6 +65,14 @@ this const api serves to make the connections to the back-end
 Library to optimize creation of different conditions inside a class (Very good for Tailwindcss conditions)
 
 
+### reanimated
+Library with large documentation for animations
+> npx expo install react-native-reanimated
+> /babel.config.js (Add this plugin below on this file)
+plugins: [
+    'react-native-reanimated/plugin'
+]
+> npx expo start --clear (to execute the fisrt execution cleaning the catch after installation)
 
 DEV PACKAGES:
 =======
