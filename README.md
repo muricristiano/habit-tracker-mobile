@@ -1,90 +1,45 @@
 # habit-tracker-mobile
+This repository contains the mobile application code for the Habit Tracker app. The project was created using Expo, a toolchain and platform for developing universal applications using React Native.
 
-Project created by: Expo
-> npx create-expo-app habit-tracker-mobile --template
-Blank (TypeScript) - Selected
+## Technologies Used
 
-PACKAGES:
-=======
-### nativewind
-- uses tailwindcss library on react native.
+### Expo
+Expo is a framework and platform for developing universal applications using React Native. It provides a set of tools and services that simplify the development and deployment process, allowing developers to focus on building the application logic.
 
-### react-native-svg
-SVG Support library for react native, then we can use the logo
+### React Native
+React Native is a JavaScript framework for building mobile applications. It allows developers to write code in JavaScript and create native-like mobile apps for both iOS and Android platforms. React Native leverages native components and APIs to provide a rich and performant user experience.
 
-1. > npx expo install react-native-svg
-2. > npm i react-native-svg-transformer --save-dev 
-    Allow using svg as a component
-3. Create a file named 'metro.config.js' in the project directory.
-4. Inside the file write and save what this link says on step 3: https://github.com/kristerkari/react-native-svg-transformer
-5. Create a new file named 'svg.d.ts' inside the folder /src/@types
-6. Inside the file write and save what this link says on step "Using Typescript": https://github.com/kristerkari/react-native-svg-transformer
+### NativeWind
+NativeWind is a library that brings the power of Tailwind CSS to React Native. It allows for easy and efficient styling of React Native components using the Tailwind CSS utility classes.
 
-### dayjs
-Library to manipulate dates
+### React Native SVG
+React Native SVG is a library that provides SVG support for React Native applications. It allows developers to use SVG assets and render them as components in their React Native UI.
 
-    1. Install
-    > npm i dayjs
-
-    2. Set to pt-br
-        A. Create folders and file /src/lib/dayjs.ts
-        B. Content: import dayjs from 'dayjs'
-                    import 'dayjs/locale/pt-br'
-                    dayjs.locale('pt-br')
-
-    3. On App.tsx, import the file:
-        import './src/lib/dayjs'
-
+### Day.js
+Day.js is a lightweight and modern JavaScript library for manipulating, parsing, and formatting dates and times. It provides an easy-to-use API for working with dates in React Native applications.
 
 ### @expo/vector-icons
-Just import {} from '@expo/vector-icons' (Search for vector-icons Expo to browse the icons)
+@expo/vector-icons is a package that provides a collection of customizable icons for use in Expo projects. It offers a wide range of icon options to enhance the visual appeal of the mobile application.
 
+### React Navigation
+React Navigation is a library that enables screen navigation in React Native applications. It provides various navigation patterns such as stack navigation, tab navigation, and drawer navigation. React Navigation simplifies the process of building navigational flows within the mobile app.
 
-### @react-navigation/native
-> npm i @react-navigation/native
-Library for navigation, screen navigation: stack overlapping menus, bar menus, etc.
-> npx expo install react-native-screens react-native-safe-area-context
-react-native-screens -> navigations
-area-context -> details on screen for example from Iphone X to current, dealing with the notepad.
-> npm i @react-navigation/native-stack
-STACK NAVIGATOR (the strategy we are going to use for navigation here)
-
-### axios
-> npm i axios
-API connection: HTTP Request 
-speed the process and reduce the amount of code to make a http request from front-end to back-end 
-> Creation of /src/lib/axios.ts
-import axios from 'axios'
-export const api = axios.create({
-    baseURL: 'http://localhost:3333'
-})
-
-this const api serves to make the connections to the back-end
+### Axios
+Axios is a popular JavaScript library for making HTTP requests from the frontend to the backend. It simplifies the process of sending and handling HTTP requests and enables faster development by reducing the amount of boilerplate code.
 
 ### clsx
-Library to optimize creation of different conditions inside a class (Very good for Tailwindcss conditions)
+Clsx is a library that optimizes the creation of conditional class names in React applications. It provides a concise syntax for conditionally applying CSS classes based on different conditions or states.
 
+### React Native Reanimated
+React Native Reanimated is a library for creating complex animations in React Native applications. It provides a high-performance, declarative API for building smooth and interactive animations.
 
-### reanimated
-Library with large documentation for animations
-> npx expo install react-native-reanimated
-> /babel.config.js (Add this plugin below on this file)
-plugins: [
-    'react-native-reanimated/plugin'
-]
-> npx expo start --clear (to execute the fisrt execution cleaning the catch after installation)
+## Development Packages
+The following development packages are used in this project:
 
-DEV PACKAGES:
-=======
-### tailwindcss --save-dev
-- CSS Library  
-1. > npx tailwindcss init
-2. set it up the tailwind.config.js initialized
-3. Add the plugin to babel.config.js inside the 'return {' : plugin: ['nativewind/babel']
-4. Typing the 'className' for react-native, inside the expo project:
-    A. Create the folder /src/@types
-    B. Create the file 'app.d.ts' in the @types folder
-    C. Write and save the content: /// <reference types="nativewind/types" />
+### Tailwind CSS
+Tailwind CSS is a highly customizable CSS framework that provides utility classes for building responsive and modern user interfaces. It simplifies the styling process and allows for rapid development by leveraging pre-defined CSS classes.
 
+##  Other Dependencies
+The project also includes other dependencies such as react-native-screens, react-native-safe-area-context, and react-native-reanimated. These packages are necessary for specific features and functionalities in the mobile application.
 
-
+Please note that the steps mentioned above are high-level explanations of the setup process. For detailed instructions and configurations, refer to the official documentation or the specific package documentation.
